@@ -1,0 +1,27 @@
+### create student
+POST http://localhost:8080/students/create
+Content-Type: application/json
+
+{
+  "name": "Michael",
+  "surname": "Palin"
+}
+
+### Get students
+GET http://localhost:8080/students/1
+
+### create lecturer
+POST http://localhost:8080/lecturers/create
+Content-Type: application/json
+
+{
+  "name": "Teddy",
+  "surname": "Bär"
+}
+
+### Get lecturers
+GET http://localhost:8080/lecturers/1
+
+
+### Get students
+PATCH http://localhost:8080/students/2/lecturers/add/1
